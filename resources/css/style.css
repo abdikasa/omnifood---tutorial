@@ -1,3 +1,8 @@
+
+/********************************************/
+/* BASIC SETUP */
+/********************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +23,21 @@ html {
     /*center container within another container*/
 }
 
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/********************************************/
+/* HEADER */
+/********************************************/
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.715)), url('/resources/img/hero.jpg');
     background-size: cover;
@@ -33,6 +53,92 @@ header {
     transform: translate(-50%, -50%);
 }
 
-h1 {
-    margin: 0;
+#logo {
+    float:left;
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
 }
+
+.nav-bar {
+    float:right;
+    list-style: none;
+    margin-top:56px;
+}
+
+.nav-bar li {
+    display:inline-block;
+    margin-left: 40px;
+}
+
+.nav-bar a:link, .nav-bar a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s;
+}
+
+.nav-bar a:hover, .nav-bar a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/********************************************/
+/* HEADER BUTTONS */
+/********************************************/
+
+
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    /*Has padding and margin, no line break*/
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;    /*Color taken from Flat UI*/
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover, 
+.btn:active{
+    background-color: #cf6d17; /* Darker shade */
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
